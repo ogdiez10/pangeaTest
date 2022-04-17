@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pangea Test / Oswaldo Becerra</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+<body>
+<div id="wrapper"> 
+	<div id="grooveshark">
+		<img src="hamb.png" class="hamb">
+		<div class="sidebar">
+			<img src="logo.png" id="logo" />
+			<nav>
+				<ul>
+					<li><span class="material-icons">public</span> Discover</li>
+					<li><span class="material-icons">photo_camera</span> Speaker</li>
+					<li><span class="material-icons">equalizer</span> Albums</li>
+					<li><span class="material-icons">comment</span> Browse</li>
+					<li><span class="material-icons">palette</span> Themes</li>
+				</ul>
+
+
+				<ul>
+					<li><span class="material-icons">playlist_play</span> Playlist</li>
+					<li><span class="material-icons">perm_identity</span> Account</li>
+					<li><span class="material-icons">settings</span> Preferences</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="content">
+			<h2>DISCOVER</h2>
+			<div class="profile"><img src="profile.png" class="userpic">
+			<div class="info"><span class="name">Samantha</span><br />
+			<span class="place">Indonesia</span></div></div>
+			<div class="clearfix"></div>
+			<ul>
+				<li data-show="popular" class="active filter">Popular<span class="border"></span></li>
+				<li data-show="finance" class="filter">Finance<span class="border"></span></li>
+				<li data-show="business" class="filter">Business<span class="border"></span></li>
+				<li data-show="creativity" class="filter">Creativity<span class="border"></span></li>
+				<li data-show="design" class="filter">Design<span class="border"></span></li>
+				<li data-show="team" class="filter">Team<span class="border"></span></li>
+			</ul>
+
+			<div class="cards">
+			<div class="card pink popular creativity design">
+				<h3>CREATIVE<br />CONFIDENCE</h3>
+				<h4>Martha Debayle<br /><span class="role">Fashion Designer</span></h4>
+				<img src="play.png" width="35" class="playbutton" />
+				<img src="podcast2.png" width="55" class="podcastimg" />
+			</div>
+
+			<div class="card blue popular business">
+				<h3>FINANCIAL<br />FREEDOM</h3>
+				<h4>Duncan Trussell<br /><span class="role">Senor Designer</span></h4>
+				<img src="play.png" width="35" class="playbutton" />
+				<img src="podcast1.png" width="55" class="podcastimg" />
+			</div>
+
+			<div class="card purple finance">
+				<h3>CRYPTO<br />STRATEGY</h3>
+				<h4>Tyler The Creator<br /><span class="role">Music Designer</span></h4>
+				<img src="play.png" width="35" class="playbutton" />
+				<img src="podcast3.png" width="55" class="podcastimg" />
+			</div>
+
+
+			<div class="card pink2 creativity">
+				<h3>CREATIVE<br />DAILY</h3>
+				<h4>Martha Debayle 2<br /><span class="role">Fashion Designer</span></h4>
+				<img src="play.png" width="35" class="playbutton" />
+				<img src="podcast2.png" width="55" class="podcastimg" />
+			</div>
+
+			<div class="card blue2 business team">
+				<h3>FINANCIAL<br />DAILY</h3>
+				<h4>Duncan Trussell 2<br /><span class="role">Senor Designer</span></h4>
+				<img src="play.png" width="35" class="playbutton" />
+				<img src="podcast1.png" width="55" class="podcastimg" />
+			</div>
+
+			<div class="card purple2 popular finance">
+				<h3>CRYPTO<br />DAILY</h3>
+				<h4>Tyler The Creator<br /><span class="role">Music Designer</span></h4>
+				<img src="play.png" width="35" class="playbutton" />
+				<img src="podcast3.png" width="55" class="podcastimg" />
+			</div>
+			</div>
+
+
+		</div>
+		<div class="player">
+			<img src="artist.jpg" class="nowPlaying" />
+			<div class="song">Come back to earth<br /><span class="artist">Mac Miller</span></div>
+			<div class="actualplayer">
+				<img src="playplayer.png" width="33" class="playbutton" id="play" />
+				<div class="progress">
+					<div class="pinkbar"></div>
+					<div class="pinkdot"></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+</body>
+<style type="text/css">
+
+
+	body { padding: 0; margin: 0; font-family: 'Roboto', sans-serif; }
+	h2 { font-family: 'Oswald', sans-serif; font-size: 46px; font-weight: 700; padding: 0; margin: 0;  }
+	#wrapper { background-color: #e0e2ef; position: relative; display: flex; overflow: hidden; min-height: 100vh; padding: 0; margin: 0; }
+	#grooveshark { background-color: #FFF; max-width: 1124px; max-height: 712px; min-height: 712px; width: 100%; height: 100%; display: flex; margin: auto; border-radius: 10px; position: relative; align-items: stretch; }
+	.sidebar { width: 18%; float: left;  padding: 72px 44px 0; margin:0; box-sizing: border-box; background:url('bgsidebar.png') no-repeat; border-radius: 10px 0 0 0; background-position:5px 5px; border-right: 1px solid #fbfbfb; }
+	.content { width: 82%; float: left;   padding: 72px 62px 0; margin:0; box-sizing: border-box; background:url('bgsidebar.png') no-repeat; background-position:90% 30%; overflow: scroll;}
+	.content::-webkit-scrollbar, .cards::-webkit-scrollbar  {
+	  display: none;
+	}
+
+	.cards {  width: 100%;
+    height: 400px;
+    overflow: scroll;  } 
+
+	.clearfix { width: 100%; clear: both; height:1px; }
+
+	.player { width: 100%; position: absolute; height: 75px; bottom: 0; background-color: #f6f5f8; border-radius: 0 0 10px 10px; padding: 0 42px; box-sizing: border-box; display: flex; flex-direction: row;  align-items: flex-start; }
+
+ 	.sidebar nav ul { padding: 0; margin:50px 0 0 0; display: block; list-style-type:none; }
+	.sidebar nav ul li { height:45px; line-height: 35px;   vertical-align: middle; color: #6d7c8e; cursor: pointer; font-size: 12px; font-weight: 500; } 
+	.sidebar nav ul li:hover { color:#d86699;  }
+	#logo { margin-bottom:25px; width: 100%; max-width: 102px; }
+	
+	.content h2 { width: 50%; display: block; float: left;}
+	.content .profile { width:150px; float: right; }
+	.content .profile .userpic, .content .profile .info { float: left; }
+	.content .profile .userpic { padding-right: 8px;  }
+	.content .profile .info { padding-top: 5px; }
+	.content .profile .info .name { color:#45444d; font-weight: 700; }
+	.content .profile .info .place { color:#98999c; font-weight: 500; }
+
+
+	.content ul {  padding: 0; margin:55px 0 0 0; display: block; list-style-type:none; clear: both; }
+	.content ul li { display: inline-block; margin-right: 30px; font-size: 12px; font-weight: 700; color:#d3d3d4; height:31px; vertical-align: top; position: relative; cursor: pointer; }
+	.content ul li:hover, .content ul li.active { color:#282739; }
+	.content ul li:last-child { margin-right: 0px; }
+	.content ul li:hover .border, .content ul li.active .border { background-color:#bb326e; height:3px; width: 65%; display: block; position: absolute; bottom:0; }
+	.card { min-height: 320px; box-sizing: border-box; width: calc(33% - 40px); border-radius: 10px; padding: 80px 22px 22px 22px; margin:40px 40px 0 0; float: left; box-sizing: border-box; cursor: pointer; }
+	
+	.card.pink { background: rgb(247,179,65); background: linear-gradient(23deg, rgba(247,179,65,1) 0%, rgba(249,107,209,1) 65%); }
+	.card.blue { background: rgb(45,220,159); background: linear-gradient(23deg, rgba(45,220,159,1) 0%, rgba(76,134,227,1) 65%); }
+	.card.purple { background: rgb(196,106,214); background: linear-gradient(23deg, rgba(196,106,214,1) 0%, rgba(84,59,184,1) 65%); }
+	.card.pink2 { background: rgb(247,179,65); background: linear-gradient(123deg, rgba(247,179,65,1) 0%, rgba(249,107,209,1) 65%); }
+	.card.blue2 { background: rgb(45,220,159); background: linear-gradient(123deg, rgba(45,220,159,1) 0%, rgba(76,134,227,1) 65%); }
+	.card.purple2 { background: rgb(196,106,214); background: linear-gradient(123deg, rgba(196,106,214,1) 0%, rgba(84,59,184,1) 65%); }
+
+
+	.card h3 { font-family: 'Oswald', sans-serif; font-weight: 400; color:#FFF; font-size: 38px; line-height: 42px; padding: 0; margin: 0px;}
+	.card h4 { font-weight: 400; color:#FFF; font-size: 11px; line-height: 20px; padding: 0; margin:18px 0 0 0px;}
+	.card h4 .role { opacity: .6; }
+	.card .podcastimg { border: 2px solid #FFF; border-radius: 10px; float: right; }
+	.card .playbutton { margin-top: 20px; float: left; }
+
+
+	.player .nowPlaying { width: 63px; border: 2px solid #FFF; border-radius: 10px; margin-top: -12px; z-index: 999; box-shadow:0 10px 10px #d6d8d9; margin-right: 15px; float: left; }
+	.player .song { font-size: 12px; color:#282739; font-weight: 700; float: left; margin-top: 16px; margin-right: 85px; }
+	.player .song .artist { color: #d3d3d4; margin-top: 7px; display: block; }
+
+	.player .actualplayer { flex-grow: 1; display: flex; align-items: center; height:100%; }
+	.player .playbutton { margin-right: 30px; cursor: pointer;  }
+	.player .playbutton:hover { width: 40px; }
+	.player .progress {  flex-grow: 1; height: 1px; background-color: #e5e5e7;  }
+	.player .progress .pinkbar { width: 0%; background-color: #c91866; height: 1px; float: left;}
+	.player .progress .pinkdot { width: 12px; height: 12px; margin-top: -6px; background-color: #c91866; margin-left: 0%; border-radius: 50px; }
+	.hamb { display: none; }
+
+		.material-icons {
+		  margin-right: 10px;
+		  vertical-align: middle;
+		  font-family: 'Material Icons';
+		  font-weight: normal;
+		  font-style: normal;
+		  font-size: 24px;  /* Preferred icon size */
+		  display: inline-block;
+		  line-height: 1;
+		  text-transform: none;
+		  letter-spacing: normal;
+		  word-wrap: normal;
+		  white-space: nowrap;
+		  direction: ltr;
+
+		  /* Support for all WebKit browsers. */
+		  -webkit-font-smoothing: antialiased;
+		  /* Support for Safari and Chrome. */
+		  text-rendering: optimizeLegibility;
+
+		  /* Support for Firefox. */
+		  -moz-osx-font-smoothing: grayscale;
+
+		  /* Support for IE. */
+		  font-feature-settings: 'liga';
+		}
+
+
+	@media only screen and (min-width: 768px) and (max-width: 822px) {
+
+		.hamb { display: block; position: absolute; top:10px; left:10px; z-index: 9999; }
+		.sidebar { display: none; }
+		.content { width: 100%; }
+		.sidebar.fixed { position: absolute; top: 0; left: 0; width: 25%; z-index: 8888; display: block; background: #FFF; height: 100%; }
+
+	}
+
+
+	@media only screen and (min-width: 200px) and (max-width: 767px) {
+
+		.hamb { display: block; position: absolute; top:10px; left:10px; z-index: 9999; }
+		.sidebar { display: none; }
+		.content { width: 100%; }
+		.sidebar.fixed { position: absolute; top: 0; left: 0; width: 100%; z-index: 8888; display: block; background: #FFF; height: 100%; }
+		.card { width: 100%; margin:0 0 20px; }
+		.content .profile { position: absolute; top: 11px; right: 5px; }
+		.content ul { margin-bottom: 20px; }
+		.content ul li { margin-bottom: 20px;  }
+		#grooveshark { height: 100vh; min-height: initial; max-height: initial; }
+		.player { padding:0 20px; }
+		.player .song { margin-right: 15px; }
+		.player .playbutton { margin-right: 10px; }
+
+	}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+	
+jQuery(document).ready(function() {
+
+    var audioElement = document.createElement('audio');
+    audioElement.setAttribute('src', 'song.mp3');
+    
+    jQuery("#play").click(function() { //Basic player
+    	//console.log('play');
+        audioElement.play();
+        	jQuery( ".pinkbar" ).animate({
+			    width:"100%"
+			  }, 203000); //Come back.... duration.
+        	jQuery( ".pinkdot" ).animate({
+			    "margin-left":"100%"
+			  }, 203000);
+    });
+
+
+	jQuery(".filter").click(function(){ //Categories filter
+		jQuery(".filter").removeClass("active");
+		jQuery(this).addClass("active");
+		var show = jQuery(this).attr("data-show");
+		jQuery(".card").fadeOut(0);
+		jQuery("." + show).fadeIn(500);
+
+	});
+
+
+	jQuery(".hamb").click(function(){
+		jQuery(".sidebar").toggleClass('fixed');
+	});
+
+});
+
+</script>
+</html>
